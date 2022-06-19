@@ -10,9 +10,9 @@ import net.nospacehuman.blodreina.NouBlodreinaNowe;
 public class ModItems {
 
     public static final Item RAW_TANZANITE = registerItem("raw_tanzanite",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC).maxCount(32)));
+            new Item(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(32)));
     public static final Item TANZANITE = registerItem("tanzanite",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC).maxCount(64)));
+            new Item(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(64)));
 
 
     private static Item registerItem(String name, Item item) {
