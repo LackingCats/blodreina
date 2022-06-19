@@ -14,7 +14,7 @@
   },
 
   "license": "MIT License",
-  "icon": "assets/blodreina/icon.png",
+  "icon": "assets/blodreina/ico/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -44,7 +44,7 @@
         "id": "blodreina",
         "name": "Nou Blodreina Nowe",
         "description": "queen of cannibals",
-        "icon": "assets/blodreina/icon.png"
+        "icon": "assets/blodreina/ico/icon.png"
       }
     }
   }
