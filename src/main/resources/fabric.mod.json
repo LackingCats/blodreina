@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "blodreina",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Nou Blodreina Nowe",
+  "description": "queen of cannibals",
   "authors": [
-    "Me!"
+    "nospacehuman"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT License",
+  "icon": "assets/blodreina/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.nospacehuman.blodreina.NouBlodreinaNowe"
+    ],
+    "client": [
+      "net.nospacehuman.blodreina.NouBlodreinaNoweClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "blodreina.mixins.json"
   ],
 
   "depends": {
@@ -34,5 +37,16 @@
   },
   "suggests": {
     "another-mod": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "parent": {
+        "id": "blodreina",
+        "name": "Nou Blodreina Nowe",
+        "description": "queen of cannibals",
+        "icon": "assets/blodreina/icon.png"
+      }
+    }
   }
+
 }
