@@ -1,6 +1,7 @@
 package net.nospacehuman.blodreina;
 
 import net.fabricmc.api.ModInitializer;
+import net.nospacehuman.blodreina.block.ModBlocks;
 import net.nospacehuman.blodreina.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,5 +13,6 @@ public class NouBlodreinaNowe implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
