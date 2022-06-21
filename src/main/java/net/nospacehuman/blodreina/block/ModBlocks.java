@@ -30,6 +30,16 @@ public class ModBlocks {
                     UniformIntProvider.create(5, 10)),
                         ModItemGroup.TANZANITE);
 
+    public static final Block NETHERRACK_TANZANITE_ORE = registerBlock("netherrack_tanzanite_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(8f).luminance(10),
+                    UniformIntProvider.create(5, 10)),
+                        ModItemGroup.TANZANITE);
+
+    public static final Block ENDSTONE_TANZANITE_ORE = registerBlock("endstone_tanzanite_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(8f).luminance(8),
+                    UniformIntProvider.create(7, 14)),
+                        ModItemGroup.TANZANITE);
+
 
     private static Item registerBlockItem(String name, Block block, ItemGroup tab) {
         return Registry.register(Registry.ITEM, new Identifier(NouBlodreinaNowe.MOD_ID, name),
