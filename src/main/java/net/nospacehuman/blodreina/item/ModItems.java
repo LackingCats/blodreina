@@ -1,8 +1,10 @@
 package net.nospacehuman.blodreina.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.nospacehuman.blodreina.NouBlodreinaNowe;
@@ -13,7 +15,9 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(32)));
     public static final Item TANZANITE = registerItem("tanzanite",
             new Item(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(64)));
-
+    public static final Item SHARD_OF_TANZANITE = registerItem("shard_of_tanzanite",
+            new Item(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(64).food(
+                    new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,20*120, 255, false, false, false), 1f).snack().build())));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(NouBlodreinaNowe.MOD_ID, name), item);
