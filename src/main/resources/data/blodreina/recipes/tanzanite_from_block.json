@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blodreina:tanzanite_block"
+    }
+  ],
+  "result": {
+    "item": "blodreina:tanzanite",
+    "count": 9
+  }
+}
