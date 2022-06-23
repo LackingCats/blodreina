@@ -3,7 +3,7 @@
   "cookingtime": 100,
   "experience": 6.0,
   "ingredient": {
-    "item": "blodreina:tanzanite_ore"
+    "item": "blodreina:deepslate_tanzanite_ore"
   },
   "result": "blodreina:tanzanite"
 }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "blodreina:tanzanite_ore",
+    "blodreina:tanzanite_block",
+    "blodreina:deepslate_tanzanite_ore",
+    "blodreina:netherrack_tanzanite_ore",
+    "blodreina:endstone_tanzanite_ore"
+  ]
+}
