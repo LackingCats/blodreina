@@ -8,6 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.nospacehuman.blodreina.NouBlodreinaNowe;
+import net.nospacehuman.blodreina.item.custom.EightBallItem;
 
 public class ModItems {
 
@@ -18,6 +19,8 @@ public class ModItems {
     public static final Item SHARD_OF_TANZANITE = registerItem("shard_of_tanzanite",
             new Item(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(64).food(
                     new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,20*300, 255, false, false, false), 1f).snack().build())));
+    public static final Item EIGHT_BALL = registerItem("eight_ball",
+            new EightBallItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(NouBlodreinaNowe.MOD_ID, name), item);
