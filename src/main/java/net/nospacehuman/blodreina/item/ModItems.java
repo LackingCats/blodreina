@@ -27,7 +27,7 @@ public class ModItems {
     public static final Item TANZANITE_BOMBER = registerItem("tanzanite_bomber",
             new TanzaniteBomberItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(16)));
     public static final Item FRAGMENT_OF_THE_HEAVENS = registerItem("fragment_of_the_heavens",
-            new FragmentOfTheHeavensItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).rarity(Rarity.RARE).maxDamage(500).maxCount(1)));
+            new FragmentOfTheHeavensItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).rarity(Rarity.RARE).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(NouBlodreinaNowe.MOD_ID, name), item);
