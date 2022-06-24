@@ -4,14 +4,14 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.FishingRodItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import org.jetbrains.annotations.NotNull;
 
-public class FragmentOfTheHeavensItem extends FishingRodItem {
+public class FragmentOfTheHeavensItem extends Item {
     public FragmentOfTheHeavensItem(Settings settings) {
         super(settings);
     }
