@@ -24,7 +24,7 @@ public class FragmentOfTheHeavensItem extends Item {
 
     @Override
     public ActionResult useOnEntity(ItemStack itemStack, @NotNull PlayerEntity user, @NotNull LivingEntity entity, Hand hand) {
-        if(rand() > 50) { //fifty percent chance
+        if(rand() > 50) { //50 percent chance
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,20*20, 2, false, false, false));
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,20*40, 2, false, false, false));
             user.sendMessage(Text.literal("bye"));
