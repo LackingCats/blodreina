@@ -16,26 +16,23 @@ public class FragmentOfTheHeavensItem extends FishingRodItem {
         super(settings);
     }
 
+    public static int rand() {
+        int min = 1;
+        int max = 100;
+        return (int)Math.floor(Math.random()*(max-min+1)+min);
+    }
+
     @Override
     public ActionResult useOnEntity(ItemStack itemStack, @NotNull PlayerEntity user, @NotNull LivingEntity entity, Hand hand) {
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,20*20, 2, false, false, false));
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,20*40, 2, false, false, false));
-        user.sendMessage(Text.literal("bye"));
-
+        if(rand() > 75) {
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,20*20, 2, false, false, false));
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,20*40, 2, false, false, false));
+            user.sendMessage(Text.literal("bye"));
+        } else {
+            user.sendMessage(Text.literal("u are not worthy"));
+        }
         return super.useOnEntity(itemStack, user, entity, hand);
     }
 }
 
-/*
-    @Override
-    public ActionResult useOnEntity(ItemStack itemStack, @NotNull PlayerEntity user, @NotNull LivingEntity entity, Hand hand) {
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,20*20, 2, false, false, false));
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,20*40, 2, false, false, false));
-        user.sendMessage(Text.literal("bye"));
-
-        itemStack.isDamageable();
-        itemStack.damage(1, user, (p) -> p.sendToolBreakStatus(hand));
-
-        return super.useOnEntity(itemStack, user, entity, hand);
- */
 
