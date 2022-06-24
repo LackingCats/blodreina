@@ -4,12 +4,15 @@
   "item.blodreina.shard_of_tanzanite": "Shard of Tanzanite",
   "item.blodreina.eight_ball": "14 Ball",
   "item.blodreina.tanzanite_bomber": "Tanzanite Bomber",
+  "item.blodreina.fragment_of_the_heavens": "Fragment of the Heavens",
 
   "block.blodreina.tanzanite_block": "Block of Tanzanite",
   "block.blodreina.tanzanite_ore": "Tanzanite Ore",
   "block.blodreina.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
   "block.blodreina.netherrack_tanzanite_ore": "Nether Tanzanite Ore",
   "block.blodreina.endstone_tanzanite_ore": "Endstone Tanzanite Ore",
+  "block.blodreina.floater": "Floater",
+  "block.blodreina.compressed_tanzanite_block": "Compressed Block of Tanzanite",
 
   "itemGroup.blodreina.tanzanite": "Tanzanite"
 }

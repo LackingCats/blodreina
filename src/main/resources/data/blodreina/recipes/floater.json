@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "blodreina:fragment_of_the_heavens"
+    },
+    "X": {
+      "item": "blodreina:compressed_tanzanite_block"
+    },
+    "T": {
+      "item": "blodreina:tanzanite"
+    }
+  },
+  "pattern": [
+    "#T#",
+    "TXT",
+    "#T#"
+  ],
+  "result": {
+    "item": "blodreina:floater"
+  }
+}

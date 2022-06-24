@@ -12,12 +12,21 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.nospacehuman.blodreina.NouBlodreinaNowe;
+import net.nospacehuman.blodreina.block.custom.FloaterBlock;
 import net.nospacehuman.blodreina.item.ModItemGroup;
 
 public class ModBlocks {
 
     public static final Block TANZANITE_BLOCK = registerBlock("tanzanite_block",
-            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(55f).luminance(15)),
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(55f).luminance(11)),
+                ModItemGroup.TANZANITE);
+
+    public static final Block COMPRESSED_TANZANITE_BLOCK = registerBlock("compressed_tanzanite_block",
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(76f).luminance(13)),
+                ModItemGroup.TANZANITE);
+
+    public static final Block FLOATER = registerBlock("floater",
+            new FloaterBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(65f).luminance(15)),
                 ModItemGroup.TANZANITE);
 
     public static final Block TANZANITE_ORE = registerBlock("tanzanite_ore",

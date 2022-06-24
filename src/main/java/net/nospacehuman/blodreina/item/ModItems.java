@@ -6,9 +6,11 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.nospacehuman.blodreina.NouBlodreinaNowe;
 import net.nospacehuman.blodreina.item.custom.EightBallItem;
+import net.nospacehuman.blodreina.item.custom.FragmentOfTheHeavensItem;
 import net.nospacehuman.blodreina.item.custom.TanzaniteBomberItem;
 
 public class ModItems {
@@ -24,6 +26,8 @@ public class ModItems {
             new EightBallItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(1)));
     public static final Item TANZANITE_BOMBER = registerItem("tanzanite_bomber",
             new TanzaniteBomberItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(16)));
+    public static final Item FRAGMENT_OF_THE_HEAVENS = registerItem("fragment_of_the_heavens",
+            new FragmentOfTheHeavensItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).rarity(Rarity.RARE).maxDamage(500).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(NouBlodreinaNowe.MOD_ID, name), item);
