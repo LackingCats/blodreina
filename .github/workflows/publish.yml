@@ -38,6 +38,7 @@ jobs:
           name: modJars.zip
           path: build/libs/
       - name: create release
+        if: ${{ runner.os == 'Linux' && matrix.java == '17' }}
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
