@@ -11,6 +11,7 @@ import net.minecraft.util.registry.Registry;
 import net.nospacehuman.blodreina.NouBlodreinaNowe;
 import net.nospacehuman.blodreina.item.custom.EightBallItem;
 import net.nospacehuman.blodreina.item.custom.FragmentOfTheHeavensItem;
+import net.nospacehuman.blodreina.item.custom.FragmentOfTheUnderworld;
 import net.nospacehuman.blodreina.item.custom.TanzaniteBomberItem;
 
 public class ModItems {
@@ -32,7 +33,7 @@ public class ModItems {
     public static final Item FRAGMENT_OF_THE_HEAVENS = registerItem("fragment_of_the_heavens",
             new FragmentOfTheHeavensItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).rarity(Rarity.RARE).maxCount(1)));
     public static final Item FRAGMENT_OF_THE_UNDERWORLD = registerItem("fragment_of_the_underworld",
-            new FragmentOfTheHeavensItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).rarity(Rarity.RARE).maxCount(1)));
+            new FragmentOfTheUnderworld(new FabricItemSettings().group(ModItemGroup.TANZANITE).rarity(Rarity.RARE).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(NouBlodreinaNowe.MOD_ID, name), item);
