@@ -20,6 +20,7 @@ import net.nospacehuman.blodreina.lib0.Number;
 import org.jetbrains.annotations.NotNull;
 
 public class TanzaniteBomberItem extends Item {
+    // HIGHLY UNSTABLE ___ USE WITH CAUTION
     public TanzaniteBomberItem(Settings settings) {
         super(settings);
     }
@@ -47,6 +48,7 @@ public class TanzaniteBomberItem extends Item {
 
         if(!world.isClient) {
             world.createExplosion(user, positioningX(user), positioningY(user), positioningZ(user), Number.number(), true, Explosion.DestructionType.BREAK);
+            user.getItemCooldownManager().set(this, 20*40);
         }
         user.incrementStat(Stats.USED.getOrCreateStat(this));
         if(!user.getAbilities().creativeMode) {
