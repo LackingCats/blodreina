@@ -61,6 +61,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        NouBlodreinaNowe.LOGGER.debug("Registering ModBlocks for " + NouBlodreinaNowe.MOD_ID);
+        NouBlodreinaNowe.LOGGER.info("Registering ModBlocks for " + NouBlodreinaNowe.MOD_ID);
     }
 }

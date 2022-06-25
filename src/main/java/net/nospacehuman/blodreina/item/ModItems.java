@@ -24,9 +24,14 @@ public class ModItems {
                     new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,20*300, 255, false, false, false), 1f).snack().build())));
     public static final Item EIGHT_BALL = registerItem("eight_ball",
             new EightBallItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(1)));
+
+
+    //BOMBER IS HIGHLY UNSTABLE -- USE WITH CAUTION
     public static final Item TANZANITE_BOMBER = registerItem("tanzanite_bomber",
             new TanzaniteBomberItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).maxCount(16)));
     public static final Item FRAGMENT_OF_THE_HEAVENS = registerItem("fragment_of_the_heavens",
+            new FragmentOfTheHeavensItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).rarity(Rarity.RARE).maxCount(1)));
+    public static final Item FRAGMENT_OF_THE_UNDERWORLD = registerItem("fragment_of_the_underworld",
             new FragmentOfTheHeavensItem(new FabricItemSettings().group(ModItemGroup.TANZANITE).rarity(Rarity.RARE).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
@@ -34,6 +39,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        NouBlodreinaNowe.LOGGER.debug("registering mod items for " + NouBlodreinaNowe.MOD_ID);
+        NouBlodreinaNowe.LOGGER.info("registering mod items for " + NouBlodreinaNowe.MOD_ID);
     }
 }

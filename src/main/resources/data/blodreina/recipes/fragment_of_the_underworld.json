@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "blodreina:floater"
+    },
+    "X": {
+      "item": "minecraft:lava_bucket"
+    },
+    "T": {
+      "item": "blodreina:tanzanite"
+    },
+    "F": {
+      "item": "blodreina:fragment_of_the_heavens"
+    }
+  },
+  "pattern": [
+    "T#T",
+    "#X#",
+    "F#F"
+  ],
+  "result": {
+    "item": "blodreina:fragment_of_the_underworld"
+  }
+}
