@@ -37,16 +37,3 @@ jobs:
         with:
           name: modJars
           path: build/libs/
-      - name: create a release to upload the mods
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          tag="${{ github.event.inputs.version }}"
-          git tag "$tag"
-          git push origin "$tag"
-          gh release create "$tag" \
-            --title "${{ github.event.inputs.title }}" \
-            --notes "${{ github.event.inputs.description }}" \
-            build/libs/modJars
-        env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
